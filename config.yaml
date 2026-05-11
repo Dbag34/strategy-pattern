@@ -1,0 +1,28 @@
+llms:
+  - name: azure-primary
+    type: azure
+    stream: false
+    api_key: "YOUR_AZURE_KEY"
+    endpoint: "https://YOUR_RESOURCE.openai.azure.com/"
+    deployment: "gpt-4o"
+    api_version: "2024-02-01"
+
+  - name: azure-stream
+    type: azure
+    stream: true
+    api_key: "YOUR_AZURE_KEY"
+    endpoint: "https://YOUR_RESOURCE.openai.azure.com/"
+    deployment: "gpt-4o"
+    api_version: "2024-02-01"
+
+  - name: gemini-fallback
+    type: gemini
+    stream: false
+    api_key: "YOUR_GEMINI_KEY"
+    model: "gemini-1.5-pro"
+
+  - name: gemini-stream-fallback
+    type: gemini
+    stream: true
+    api_key: "YOUR_GEMINI_KEY"
+    model: "gemini-1.5-pro"
